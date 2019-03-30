@@ -33,3 +33,7 @@ app.get('/about', function(request, response) {
 app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
+
+app.get('/contact', function(request, response) {
+  response.render('pages/contact');
+});
