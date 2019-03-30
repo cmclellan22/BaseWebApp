@@ -20,3 +20,16 @@ app.listen(app.get('port'), function() {
 
 // This file is what handles incoming requests and
 // serves files to the browser, or executes server-side code
+
+// Set up the app's routing
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
+
+app.get('/about', function(request, response) {
+  response.render('pages/about');
+});
+
+app.get('/projects', function(request, response) {
+  response.render('pages/projects');
+});
