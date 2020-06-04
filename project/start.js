@@ -37,3 +37,7 @@ app.get('/projects', function(request, response) {
 app.get('/contact', function(request, response) {
   response.render('pages/contact');
 });
+
+app.get('/courses', function(request, response) {
+  response.render('pages/courses');
+});
